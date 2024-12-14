@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        * {
+            background-color: rgb(0, 0, 0);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            z-index: 0;
+        }
+
+        .ura {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 11;
+        }
+        .vreme {
+            position: absolute ;
+            bottom: 1px;
+            right: 0px;
+            min-width: 100%;
+            text-align: center;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="vreme">    
+        <a class="weatherwidget-io" href="https://forecast7.com/en/46d2415d27/celje/" data-label_1="CELJE" data-label_2="WEATHER" data-theme="dark" >CELJE WEATHER</a>
+        <script>
+            !function(d,s,id) {
+                var js,fjs=d.getElementsByTagName(s)[0];
+                    if(!d.getElementById(id)) {
+                        js=d.createElement(s);
+                        js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js,fjs);
+                    }
+            }
+            (document,'script','weatherwidget-io-js');
+        </script>
+    </div>
+
+    <div class="ura">
+        <iframe src="https://free.timeanddate.com/clock/i9of01i0/n736/szw210/szh210/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmv0/hwm1/hhcfff/hmcfff/hscfff" frameborder="0" width="210" height="210"></iframe>
+    </div>
+</body>
+</html>
