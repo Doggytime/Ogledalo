@@ -3,12 +3,16 @@
     <style>
         * {
             background-color: rgb(0, 0, 0);
+            color: white;
         }
 
         body {
             display: flex;
             justify-content: center;
-            z-index: 0;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
         }
 
         .ura {
@@ -18,12 +22,22 @@
             z-index: 11;
         }
         .vreme {
-            position: absolute ;
+            position: absolute;
             bottom: 1px;
             right: 0px;
             min-width: 100%;
             text-align: center;
             z-index: 10;
+            transform: scale(1, 0.9);
+        }
+        .calendar {
+            width: 300px;
+            height: 700px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 12;
+            background-color: black;
         }
     </style>
 </head>
@@ -45,6 +59,10 @@
 
     <div class="ura">
         <iframe src="https://free.timeanddate.com/clock/i9of01i0/n736/szw210/szh210/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql15/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmv0/hwm1/hhcfff/hmcfff/hscfff" frameborder="0" width="210" height="210"></iframe>
+    </div>
+
+    <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=sl.slovenian%23holiday%40group.v.calendar.google.com&ctz=Europe%2FBelgrade" style="border: 0; width: 100%; height: 100%; background-color: black;" frameborder="0" scrolling="no"></iframe>
     </div>
 </body>
 </html>
